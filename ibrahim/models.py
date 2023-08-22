@@ -41,7 +41,7 @@ class Services(models.Model):
 class Projects(models.Model):
     project_title = models.CharField(max_length=20)
     project_description = models.CharField(max_length=100)
-    project_img = models.ImageField(upload_to='ProjectImg/%y/%m/%d')
+    project_img = models.ImageField(upload_to='ProjectImg')
     project_details_link = models.URLField(max_length=200,default="localhost", blank=True, null=True)
     publication_date = models.DateField(null=True)
 
