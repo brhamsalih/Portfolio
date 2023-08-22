@@ -1,0 +1,16 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/media.css' %}">
+
+{% for portfolio  in portfolio  %}
+
+
+{% include 'parts/navbar.html' %}
+
+{% block content %}
+{% endblock content %}
+
+
+{% include 'parts/footer.html' %}
+
+{% endfor %}
