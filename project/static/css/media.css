@@ -129,6 +129,12 @@
     body{
         font-size: 10px;
     }
+    .main .code-logo a{
+        font-size: 10em;
+    }
+    .main h2 span {
+        font-size: 2.2em;
+    }
     .footer-title {
         font-size: 1em;
     }
