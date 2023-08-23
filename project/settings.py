@@ -27,6 +27,7 @@ SECRET_KEY = 'kcx6%dhs)tw=t&q_mp=adl7a71h%hu74he0w)5_37a&h7@lyr_'
 DEBUG = True
 #DEBUG = os.environ.get['DEBUG']
 ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = ['https://ibrahimsalih.up.railway.app']
 
 
 # Application definition
