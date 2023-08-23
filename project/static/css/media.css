@@ -30,7 +30,7 @@
     }
 }
 @media (max-width:770px){
-
+    
     .title{
         font-size: 1.8em;
     }
@@ -88,6 +88,9 @@
   }
 }  
 @media (max-width:695px){
+    section{
+        padding: 100px 100px;
+    }
     body{
         font-size: 12px;
     }
