@@ -89,7 +89,7 @@
 }  
 @media (max-width:695px){
     section{
-        padding: 100px 100px;
+        padding: 100px 10px;
     }
     body{
         font-size: 12px;
