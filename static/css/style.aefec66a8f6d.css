@@ -6,7 +6,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
 .contaienr{
     padding: 10px;
