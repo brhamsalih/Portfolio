@@ -6,12 +6,9 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    overflow-x: hidden;
-    
-
 }
 /*-----------------StyleHeader------------------*/
-/*header {
+header {
     background-color: #f0f0f0;
     width: 100%;
     position: fixed;
@@ -23,65 +20,36 @@
 }
 .logo {
     text-decoration: none;
-    color: #238CE7;
+    color: #121212;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.8em /* == 16px ;
+    font-size: 1.8em /* == 16px */;
     transition: 0.5s ease;
 }
-
-
 .logo:hover {
-    color: #212121;  
+    color: #238CE7;  
 
-}
-*/
-
-
-
-.navigation {
-    overflow: hidden;
-    background-color: #fff;
-    padding: 10px 50px ;
-    transition: 0.5s ease;
-        
 }
 .navigation a{
-    float: left;
-    display: block;
     color: #212121;
-    text-align: center;
-    padding: 10px 30px 10px 0px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
     transition: 0.5s ease;
 }
-.navigation a:not(:first-child){
-    float: right;
-    
-}
-
 .navigation a:hover {
-    color: #238CE7;
-    transform: scale(1.1);
+    color: #238CE7;    
 }
-.navigation .iconbar{
+header .iconbar{
     display: none;
-}
-
-.active {
-    text-transform: uppercase;
-    font-weight: 700;
-    transition: 0.5s ease;
-}
-.active:hover{
-    transform: scale(1.1);
+    float: right;
 }
 /*-----------------EndStyleHeader------------------*/
 
 /*---------------------Section-1---------------------*/
 section {
-    padding: 100px 100px;
+    padding: 100px 200px;
 }
 .main {
     width: 100%;
@@ -98,11 +66,15 @@ section {
     background-attachment: fixed;
     */
 }
+.main .code-logo{
+    float: right;
+}
 .main .code-logo a{
     color: #fff;
-    font-size: 18em;
+    font-size: 20em;
     font-weight: 600;
     transition: 0.5s ease;
+   
 }
 .main .code-logo a:hover {
     color: #238CE7;
@@ -117,13 +89,13 @@ section {
     display: inline-block;
     margin-top: 10px;
     color: #fff;
-    font-size: 2.5em;
-    font-weight: 700;
+    font-size: 3em;
+    font-weight: 600;
 }
 .main h3 {
     color: #fff;
-    font-size: 1.7em;
-    font-weight: 600;
+    font-size: 2em;
+    font-weight: 700;
     letter-spacing: 1px;
     margin-top: 10px;
     margin-bottom: 30px;
@@ -144,7 +116,7 @@ section {
 .main-btn:hover {
     background-color: #238CE7;
     color: #fff;  
-    transform: scale(1.2);  
+    transform: scale(1.1);  
 }
 .social-icons a {
     color: #fff;
@@ -175,18 +147,16 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
 .card {
     background-color: #fff;
-    border: 1px solid #fff;
-    overflow: hidden;
     width: 20.25em;
     box-shadow: 0 5px 25px rgba(1 1 1 /15%);
     border-radius: 10px;
-    padding: 0px 0px 10px 0px;
-    margin: 15px;
+    padding: 25px;
+    margin: 10px;
     transition: 0.5s ease;
 }
 .card:hover {
@@ -194,7 +164,7 @@ section {
 }
 .icon {
     color: #212121;
-    font-size: 7em;
+    font-size: 8em;
     text-align: center;
 }
 .info {
