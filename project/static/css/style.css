@@ -6,9 +6,11 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    overflow-x: hidden;
-    
 
+}
+.contaienr{
+    padding: 10px;
+    margin: 10px;
 }
 /*-----------------StyleHeader------------------*/
 /*header {
@@ -81,7 +83,7 @@
 
 /*---------------------Section-1---------------------*/
 section {
-    padding: 100px 100px;
+    padding: 100px 200px;
 }
 .main {
     width: 100%;
@@ -103,6 +105,7 @@ section {
     font-size: 18em;
     font-weight: 600;
     transition: 0.5s ease;
+    overflow: hidden;
 }
 .main .code-logo a:hover {
     color: #238CE7;

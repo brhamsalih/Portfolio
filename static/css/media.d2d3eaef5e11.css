@@ -34,7 +34,9 @@
     .title{
         font-size: 1.8em;
     }
-
+    section{
+        padding: 50px 30px;
+    }
     .main .code-logo a{
         font-size: 11em;
     }
@@ -91,7 +93,9 @@
     body{
         font-size: 12px;
     }
-
+    section {
+        padding: 50px 0px;
+    }
     .main .code-logo a{
         font-size: 12em;
     }
