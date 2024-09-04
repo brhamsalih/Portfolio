@@ -36,5 +36,8 @@ name_env\Scripts\activate
 git clone https://github.com/brhamsalih/Portfolio.git
 pip3 install requirements.txt
 ```
-- ## Usage
-
+## Usage
+```bash
+cd /Portfolio
+python3 manage.py runserver
+```
