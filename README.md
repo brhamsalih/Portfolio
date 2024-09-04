@@ -12,3 +12,9 @@
 # Django administration 
 • Create Personal Info
 ![Screenshot 2024-09-04 at 4 58 07 PM](https://github.com/user-attachments/assets/d2c2396e-4535-4320-a12c-9842e0528780)
+• Create Project
+![Screenshot 2024-09-04 at 4 58 22 PM](https://github.com/user-attachments/assets/4ab323e6-62e1-467c-82e9-a5636ebf6d36)
+• Create Skills 
+![Screenshot 2024-09-04 at 4 58 43 PM](https://github.com/user-attachments/assets/dd273653-62ab-4981-b8ed-f94be486d247)
+• Create Social Icone and Links
+![Screenshot 2024-09-04 at 4 58 48 PM](https://github.com/user-attachments/assets/1e2da7c6-a8df-462a-b79b-7e4ddedf0011)
