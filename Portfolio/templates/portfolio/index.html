@@ -1,0 +1,144 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&amp;family=Rubik:wght@800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link 
+      rel="stylesheet"
+      crossorigin=""
+      href="{% static '/css/style.css' %}"
+    />
+    <script src="https://kit.fontawesome.com/5ef10fbd96.js" crossorigin="anonymous"></script>
+    <title>Ibrahim Salih</title>
+  </head>
+  <body data-theme="dark">
+    <div id="root">
+      <section id="hero" class="_container_1264w_1">
+        <div class="_colorModeContainer_1264w_54">
+        {% for personal in personal %}
+        {% if personal.photo %}
+          <img class="_hero_1264w_10" src="{{ personal.photo.url }}" alt="{{ personal.name }}" width="300">
+        {% else %}
+          <p>No photo available</p>
+        {% endif %}
+        </div>
+        <div class="_info_1264w_73">
+          <h1>{{ personal.name }}</h1>
+          <h2>{{ personal.job_title }}</h2>
+          <span class="social">
+              {% for socialinks in socialinks %}
+                {% if socialinks.social_name == 'instagram' %}
+                  <a style=" color:ffffff;" href="{{ socialinks.social_links }}" target="_blank">
+                  <i class="{{ socialinks.social_icone }}"></i>
+                  </a>
+                {% elif socialinks.social_name == 'github' %}
+                  <a style=" color:ffffff;" href="{{ socialinks.social_links }}" target="_blank">
+                    <i class="{{ socialinks.social_icone }}"></i>
+                  </a>
+                {% elif socialinks.social_name == 'linkedin' %}           
+                  <a style=" color:ffffff;" href="{{ socialinks.social_links }}" target="_blank">
+                    <i class="{{ socialinks.social_icone }}"></i>
+                  </a>
+                {% else %}
+                      <p>No Links available</p>
+                {% endif %}
+              {% endfor %}
+          </span>
+          <p class="_description_1264w_68">{{ personal.bio }}</p>
+          <a href="{{ personal.uploaded_file.url }}" download="">
+            <button class="hover" download="">Resume</button>
+          </a>
+          {% endfor %}
+        </div>
+      </section>
+      <section id="projects" class="_container_ktxu3_1">
+        <h1 class="sectionTitle">Projects</h1>
+        <div class="_projectsContainer_ktxu3_25">
+
+        {% for project in projects %}
+          <li>
+            <div class="_projectsContainer_ktxu3_25">
+              <a
+                href="{{ project.link }}" target="_blank">
+                {% if project.photo %}
+                    <img class="hover" src="{{ project.photo.url }}" alt="{{ project.name }}" width="300">
+                {% else %}
+                    <p>No photo available</p>
+                {% endif %}
+                <h3>{{ project.name }}</h3>
+                <p>{{ project.description }} </p>
+              </a>
+          </li>
+        {% endfor %}
+
+        </div>
+      </section>
+      <section id="skills" class="_container_1rj0m_1">
+        <h1 class="sectionTitle">Skills</h1>
+        <div class="_skillList_1rj0m_18">
+          {% for skill in skills %}
+            <span>
+            <img
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='300'%20zoomAndPan='magnify'%20viewBox='0%200%20224.87999%20225'%20height='300'%20preserveAspectRatio='xMidYMid%20meet'%20version='1.0'%3e%3cdefs%3e%3cclipPath%20id='1908cb7580'%3e%3cpath%20d='M%209%2015%20L%20209%2015%20L%20209%20224.9375%20L%209%20224.9375%20Z%20M%209%2015%20'%20clip-rule='nonzero'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20clip-path='url(%231908cb7580)'%3e%3cpath%20fill='%23ffffff'%20d='M%2038.371094%20109.824219%20C%2057.113281%20128.5625%2070.5%20147.304688%2083.882812%20171.398438%20C%20146.351562%2053.601562%20222.203125%200.0585938%20206.140625%2018.800781%20C%20155.273438%2083.945312%20120.472656%20149.980469%2086.5625%20224.941406%20C%2066.929688%20189.246094%2041.941406%20141.949219%2011.601562%20132.132812%20C%202.675781%20123.207031%2024.09375%20101.792969%2038.371094%20109.824219%20Z%20M%2038.371094%20109.824219%20'%20fill-opacity='1'%20fill-rule='nonzero'/%3e%3c/g%3e%3c/svg%3e"
+              alt="Checkmark icon"
+            />
+            <p>{{ skill.name }}</p>
+            </span>
+          {% endfor %}
+        </div>
+        <hr />
+        <div class="_skillList_1rj0m_18">
+          <span>
+        </div>
+      </section>
+      <section id="contact" class="_container_hxhzt_1">
+        <h1 class="sectionTitle">Contact</h1>
+        <form action="" method="POST">
+          {% csrf_token %}
+          <div class="formGroup">
+            <label for="name" hidden="">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              required=""
+            />
+          </div>
+          <div class="formGroup">
+            <label for="email" hidden="">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required=""
+            />
+          </div>
+          <div class="formGroup">
+            <label for="message" hidden="">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Message"
+              required=""
+            ></textarea>
+          </div>
+          <input class="hover btn" type="submit" value="Submit" />
+        </form>
+      </section>
+      <section id="footer" class="_container_uite4_1">
+        <p>&copy; 2024 Ibrahim Salih. All rights reserved.</p>
+      </section>
+    </div>
+  </body>
+</html>
