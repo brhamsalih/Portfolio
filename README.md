@@ -34,7 +34,7 @@ name_env\Scripts\activate
 ```
 ```bash
 git clone https://github.com/brhamsalih/Portfolio.git
-pip3 install requirements.txt
+pip3 install -r requirements.txt
 ```
 ## Usage
 ```bash
@@ -42,9 +42,10 @@ cd /Portfolio
 python3 manage.py runserver
 ```
 - http://127.0.0.1:8000/
-- admin panal
-http://127.0.0.1:8000/admin
-- Username & Password
+- Create Subperuser for admin panal
 ```bash
-admin
+python3 manage.py createsuperuser
 ```
+- http://127.0.0.1:8000/admin
+
+
