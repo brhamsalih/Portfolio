@@ -41,10 +41,10 @@ pip3 install requirements.txt
 cd /Portfolio
 python3 manage.py runserver
 ```
-(http://127.0.0.1:8000/)
+http://127.0.0.1:8000/
 - admin panal
-(http://127.0.0.1:8000/admin)
-Username & Password
+http://127.0.0.1:8000/admin
+- Username & Password
 ```bash
 admin
 ```
