@@ -18,7 +18,23 @@
 ![Screenshot 2024-09-04 at 4 58 43 PM](https://github.com/user-attachments/assets/dd273653-62ab-4981-b8ed-f94be486d247)
 - Create Social Icone and Links
 ![Screenshot 2024-09-04 at 4 58 48 PM](https://github.com/user-attachments/assets/1e2da7c6-a8df-462a-b79b-7e4ddedf0011)
+## Installation
+Create virtualenv
+--Linux/MacOS
+```bash
+pip3 install virtualenv 
+python3 -m venv 'name_env'
+source name_env/bin/activate
+```
+--Windows
+```bash
+pip3 install virtualenv
+python -m virtualenv 'name_env'
+name_env\Scripts\activate
+```
+```bash
+git clone https://github.com/brhamsalih/Portfolio.git
+pip3 install requirements.txt
+```
+- ## Usage
 
-# Usage
-- git clone https://github.com/brhamsalih/Portfolio.git
-- pip3 install requirements.txt
