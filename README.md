@@ -20,13 +20,13 @@
 ![Screenshot 2024-09-04 at 4 58 48 PM](https://github.com/user-attachments/assets/1e2da7c6-a8df-462a-b79b-7e4ddedf0011)
 ## Installation
 Create virtualenv
---Linux/MacOS
+-Linux/MacOS
 ```bash
 pip3 install virtualenv 
 python3 -m venv 'name_env'
 source name_env/bin/activate
 ```
---Windows
+-Windows
 ```bash
 pip3 install virtualenv
 python -m virtualenv 'name_env'
