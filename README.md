@@ -9,3 +9,5 @@
 ![Screenshot 2024-09-04 at 4 19 20 PM](https://github.com/user-attachments/assets/0603a9e6-88d7-4f43-87e3-8fcde60c9af3)
 # Footer
 ![Screenshot 2024-09-04 at 4 17 36 PM](https://github.com/user-attachments/assets/851c1ac2-e3cf-4a92-9241-ac9d00ed9299)
+# Django administration Create Personal Info
+![Screenshot 2024-09-04 at 4 58 07 PM](https://github.com/user-attachments/assets/d2c2396e-4535-4320-a12c-9842e0528780)
