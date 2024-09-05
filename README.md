@@ -47,5 +47,8 @@ python3 manage.py runserver
 python3 manage.py createsuperuser
 ```
 - http://127.0.0.1:8000/admin
-
-
+- To use contact form create .env file and add 
+```bash
+EMAIL_HOST_USER='example@email.com'
+EMAIL_HOST_PASSWORD='App Password'
+```
