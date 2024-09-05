@@ -52,5 +52,5 @@ python3 manage.py createsuperuser
 EMAIL_HOST_USER='example@email.com'
 EMAIL_HOST_PASSWORD='App Password'
 ```
-- To Create app password enable 2-factor authentication in your gmail then
+- To Create app password enable [2-factor authentication](https://accounts.google.com/v3/signin/challenge/pwd?TL=AKeb6mw9WkjBb2KUcrFVuG0hgriWTbE_4lIc5Ha0MfYdwdO42Em1qgUg5MZmP1gU&cid=2&continue=https%3A%2F%2Fmyaccount.google.com%2Fu%2F1%2Fsigninoptions%2Ftwosv&flowName=GlifWebSignIn&followup=https%3A%2F%2Fmyaccount.google.com%2Fu%2F1%2Fsigninoptions%2Ftwosv&ifkv=Ab5oB3rU6xKVdrlui_CNYFSR6yG073tQjMO27jcErPo1DRY2yWNUQ3S0abFcz-AaaX9azxCpOyRU8Q&osid=1&rart=ANgoxceRA8yn2gnKBR0UhIQAYHcvtOdg-dwPeSZ4bzQ-zoABwF9WZAk80DVqKkQWixbTI0jhuOZV9qzmD_jvywWO--UDH8esBqGJATQwF0x4kZYgnPKImkU&rpbg=1) in your gmail then
 - [Create app password](https://myaccount.google.com/apppasswords?pli=1&rapt=AEjHL4M9OJHGg-2I1xoCZ_pby8nEffn7R34L4EH1vkN2RCM1MxOga7cdNiY09rbWtqqqqUL0f29xtgSExrew1I8Z0XbVMeiEeEdYi9nCO98asdxLdPTiLRI) 
